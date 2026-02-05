@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Atlas — Un codex pour penser, coder, livrer</title>
+    <meta
+      name="description"
+      content="Codex Atlas : atelier premium pour explorer, composer, exécuter et publier des expériences web."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="navbar glass">
+      <div class="logo">Codex Atlas</div>
+      <nav aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#explorer">Explorer</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#projets">Projets</a>
+        <a href="#documentation">Documentation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn-secondary">Cmd + K</button>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero">
+        <div class="hero-copy">
+          <p class="kicker">Bibliothèque futuriste • calme • premium</p>
+          <h1>Un codex pour penser, coder, livrer.</h1>
+          <p class="subtext">
+            Des modèles propres. Un atelier rapide. Des exports fiables.
+          </p>
+          <div class="cta-row">
+            <button class="btn-primary">Démarrer dans l’Atelier</button>
+            <button class="btn-secondary">Explorer les modèles</button>
+          </div>
+        </div>
+        <article class="hero-panel glass" aria-label="Carte projet vivante">
+          <header>
+            <h2>Projet : Aurora Notes</h2>
+            <span class="badge">En synthèse</span>
+          </header>
+          <ul>
+            <li><strong>Statut</strong> <span>Prévisualisation active</span></li>
+            <li><strong>Fichiers</strong> <span>18 composants</span></li>
+            <li><strong>Sortie</strong> <span>Landing + docs + slides</span></li>
+          </ul>
+          <div class="panel-preview">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="modes" aria-labelledby="modes-title">
+        <h2 id="modes-title">Trois modes, un flux continu</h2>
+        <div class="cards-3">
+          <article class="glass mode-card">
+            <div class="line-icon" aria-hidden="true">◌</div>
+            <h3>Explorer</h3>
+            <p>Modèles prêts à l’emploi : sites, apps, docs et pitchs.</p>
+          </article>
+          <article class="glass mode-card">
+            <div class="line-icon" aria-hidden="true">◌</div>
+            <h3>Atelier</h3>
+            <p>Éditeur, contrôles de style, contraintes et rendu live.</p>
+          </article>
+          <article class="glass mode-card">
+            <div class="line-icon" aria-hidden="true">◌</div>
+            <h3>Publier</h3>
+            <p>Exports HTML/CSS, docs, PDF, slides et dépôt Git.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="before-after" aria-labelledby="ba-title">
+        <h2 id="ba-title">Avant / Après</h2>
+        <p>Fais glisser pour passer d’un brief flou à un artefact livré.</p>
+        <div class="slider-card glass">
+          <label for="compare">Progression</label>
+          <input id="compare" type="range" min="0" max="100" value="55" />
+          <div class="comparison">
+            <div class="state before">
+              <h3>Avant</h3>
+              <p>Notes disparates, exigences incomplètes, ton incohérent.</p>
+            </div>
+            <div class="state after" style="--reveal: 55%">
+              <h3>Après</h3>
+              <p>Page finalisée, composants cohérents, checklist validée.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="explorer" class="explorer" aria-labelledby="explorer-title">
+        <header>
+          <h2 id="explorer-title">Explorer</h2>
+          <p>Choisis une base. Ajuste. Publie.</p>
+        </header>
+        <div class="filters glass" role="group" aria-label="Filtres modèles">
+          <button>Type: Landing</button>
+          <button>Niveau: Intermédiaire</button>
+          <button>Style: Glass</button>
+          <button>Tech: React</button>
+        </div>
+        <div class="masonry">
+          <article class="template-card glass"><h3>Neon Brief</h3><p>Landing + pricing + FAQ</p></article>
+          <article class="template-card glass"><h3>Atlas Dashboard</h3><p>Stats + timeline + exports</p></article>
+          <article class="template-card glass"><h3>Editorial Codex</h3><p>Doc longform + API mentale</p></article>
+          <article class="template-card glass"><h3>Studio Pitch</h3><p>Slides + storytelling + CTA</p></article>
+        </div>
+      </section>
+
+      <section id="atelier" class="atelier" aria-labelledby="atelier-title">
+        <h2 id="atelier-title">Atelier</h2>
+        <p>Contraintes → Structure → Rendu.</p>
+        <div class="workspace">
+          <article class="pane glass">
+            <h3>Bibliothèque</h3>
+            <ul>
+              <li>Fichiers</li>
+              <li>Sections</li>
+              <li>Composants</li>
+              <li>Recherche rapide</li>
+            </ul>
+          </article>
+          <article class="pane glass">
+            <h3>Éditeur</h3>
+            <p class="mono">[brief] [contraintes] [sortie attendue]</p>
+            <p class="mono">Mode dev: activable, snippets, blocs épinglés.</p>
+          </article>
+          <article class="pane glass">
+            <h3>Aperçu</h3>
+            <ul>
+              <li>Live responsive : mobile / tablette / desktop</li>
+              <li>Audit express : accessibilité, perf, cohérence</li>
+              <li>Snapshots + variantes A/B</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projets" class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projets</h2>
+        <div class="cards-3">
+          <article class="glass"><h3>Library View</h3><p>Nom, date, statut, dernière exportation.</p></article>
+          <article class="glass"><h3>Timeline</h3><p>Itérations, snapshots, exports.</p></article>
+          <article class="glass"><h3>Recherche</h3><p>Tags, pin, tri intelligent.</p></article>
+        </div>
+      </section>
+
+      <section id="documentation" class="docs" aria-labelledby="docs-title">
+        <h2 id="docs-title">Documentation</h2>
+        <div class="docs-layout">
+          <aside class="glass">
+            <h3>Guides</h3>
+            <ul>
+              <li>Prompts structurés</li>
+              <li>Design system</li>
+              <li>Accessibilité</li>
+              <li>Exports & intégrations</li>
+            </ul>
+          </aside>
+          <article class="glass">
+            <h3>Erreurs fréquentes</h3>
+            <p>Descriptions trop vagues, contraintes non mesurables, sorties ambiguës.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials" aria-label="Témoignages">
+        <article class="glass"><strong>Designer</strong><p>“Du flou à une interface propre en une session.”</p></article>
+        <article class="glass"><strong>PM</strong><p>“Roadmap clarifiée, livrables visibles, validations accélérées.”</p></article>
+        <article class="glass"><strong>Dev</strong><p>“Moins d’allers-retours, plus d’exécution nette.”</p></article>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div>
+        <h3>Codex Atlas</h3>
+        <p>Statut système : opérationnel</p>
+      </div>
+      <div>
+        <a href="#">À propos</a>
+        <a href="#">Tarifs</a>
+        <a href="#">Légal</a>
+      </div>
+    </footer>
+
+    <dialog id="command-palette" class="glass">
+      <h2>Command Palette</h2>
+      <ul>
+        <li>Créer section</li>
+        <li>Appliquer style</li>
+        <li>Générer copy</li>
+        <li>Exporter</li>
+      </ul>
+      <button id="close-palette" class="btn-secondary">Fermer</button>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
