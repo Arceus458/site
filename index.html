@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Atlas — Un codex pour penser, coder, livrer.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="star-grid" aria-hidden="true"></div>
+    <header class="navbar glass">
+      <div class="brand">Codex Atlas</div>
+      <nav aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#explorer">Explorer</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#projets">Projets</a>
+        <a href="#documentation">Documentation</a>
+      </nav>
+      <button class="ghost-btn" id="openPaletteBtn">⌘K</button>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Bibliothèque futuriste • calme • premium</p>
+          <h1>Un codex pour penser, coder, livrer.</h1>
+          <p class="lead">Des modèles propres. Un atelier rapide. Des exports fiables.</p>
+          <div class="hero-cta">
+            <button class="primary-btn">Lancer l'Atelier</button>
+            <button class="ghost-btn">Voir la démo</button>
+          </div>
+        </div>
+        <aside class="project-panel glass" id="projectPanel" aria-label="Carte projet animée">
+          <div class="panel-layer layer-1">
+            <p class="mono">Projet #A-091</p>
+            <h3>Landing Nova Library</h3>
+            <p class="status">Statut : <span>En composition</span></p>
+            <ul>
+              <li>hero.tsx</li>
+              <li>tokens.json</li>
+              <li>export/pdf-ready.md</li>
+            </ul>
+          </div>
+          <div class="panel-layer layer-2">
+            <p class="mono">Aperçu</p>
+            <div class="preview-window">
+              <div></div><div></div><div></div>
+            </div>
+          </div>
+          <div class="panel-layer layer-3">
+            <p class="mono">Checklist</p>
+            <ul>
+              <li>Contraste AA</li>
+              <li>Perf 95+</li>
+              <li>Export HTML/CSS</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" aria-labelledby="modes-title">
+        <h2 id="modes-title">3 modes</h2>
+        <div class="mode-cards">
+          <article class="glass mode-card">
+            <svg viewBox="0 0 100 100" class="trace-icon" aria-hidden="true"><path d="M15 50h25l10-18 15 34 20-20" /></svg>
+            <h3>Explorer</h3>
+            <p>Modèles prêts à l'emploi : sites, apps, docs, pitchs.</p>
+          </article>
+          <article class="glass mode-card">
+            <svg viewBox="0 0 100 100" class="trace-icon" aria-hidden="true"><path d="M12 20h76v60H12z M24 35h52 M24 50h38" /></svg>
+            <h3>Atelier</h3>
+            <p>Éditeur + contrôles : style, composants, sorties.</p>
+          </article>
+          <article class="glass mode-card">
+            <svg viewBox="0 0 100 100" class="trace-icon" aria-hidden="true"><path d="M20 20h60v45H20z M50 65v15 M35 80h30" /></svg>
+            <h3>Publier</h3>
+            <p>Exports : HTML/CSS, docs, PDF, slides, repo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="avant-apres" aria-labelledby="slider-title">
+        <h2 id="slider-title">Avant / Après</h2>
+        <div class="compare glass" id="compare">
+          <div class="pane before">
+            <h3>Avant</h3>
+            <p>Brief flou, intentions dispersées, architecture incomplète.</p>
+          </div>
+          <div class="pane after" id="afterPane">
+            <h3>Après</h3>
+            <p>Page finie, composants modulaires, checklist validée.</p>
+          </div>
+          <input type="range" min="0" max="100" value="55" id="slider" aria-label="Comparer avant et après" />
+        </div>
+      </section>
+
+      <section id="explorer" class="section">
+        <h2>Explorer</h2>
+        <p>Choisis une base. Ajuste. Publie.</p>
+        <div class="filters">
+          <button>Landing</button><button>Dashboard</button><button>Doc</button>
+          <button>Glass</button><button>Brutal</button><button>Editorial</button>
+        </div>
+        <div class="masonry">
+          <article class="glass card"><h3>Orbit Landing</h3><p>Tags: Landing • Intermédiaire • React</p><button>Ouvrir dans l'Atelier</button></article>
+          <article class="glass card"><h3>Nebula Dashboard</h3><p>Tags: Dashboard • Avancé • Vue</p><button>Ouvrir dans l'Atelier</button></article>
+          <article class="glass card"><h3>Editorial Doc</h3><p>Tags: Documentation • Débutant • Astro</p><button>Ouvrir dans l'Atelier</button></article>
+        </div>
+      </section>
+
+      <section id="atelier" class="section atelier">
+        <h2>Atelier</h2>
+        <p>Contraintes → Structure → Rendu.</p>
+        <div class="workspace glass">
+          <div>
+            <h3>Bibliothèque</h3>
+            <ul><li>fichiers</li><li>sections</li><li>composants</li></ul>
+          </div>
+          <div>
+            <h3>Éditeur</h3>
+            <textarea aria-label="Prompt structuré">Objectif:
+Audience:
+Contraintes:
+Sortie attendue:</textarea>
+          </div>
+          <div>
+            <h3>Aperçu</h3>
+            <p>Responsive • Audit a11y • Perf • Cohérence</p>
+            <div class="tabs"><button>Mobile</button><button>Tablette</button><button>Desktop</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="section">
+        <h2>Projets</h2>
+        <div class="timeline glass">
+          <p>Bibliothèque: nom, date, statut, dernière exportation.</p>
+          <ol>
+            <li>v1 Snapshot — Typographie A</li>
+            <li>v2 Snapshot — Palette B</li>
+            <li>v3 Export — HTML/CSS + PDF</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="documentation" class="section docs">
+        <h2>Documentation</h2>
+        <div class="docs-layout">
+          <aside class="glass"><ul><li>Prompts structurés</li><li>Design system</li><li>Accessibilité</li><li>Exports & intégrations</li></ul></aside>
+          <article class="glass"><h3>Erreurs fréquentes</h3><p>Contraintes ambiguës, objectifs multiples, sorties non testables.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>Plan du site • Statut système: Opérationnel • Liens légaux</p>
+      </div>
+    </footer>
+
+    <dialog id="commandPalette" class="glass">
+      <h3>Command Palette</h3>
+      <ul>
+        <li>Créer section</li>
+        <li>Appliquer style</li>
+        <li>Générer copy</li>
+        <li>Exporter</li>
+      </ul>
+      <button id="closePaletteBtn">Fermer</button>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
